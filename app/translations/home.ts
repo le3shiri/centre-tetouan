@@ -84,5 +84,48 @@ export const home = {
       description: "اكتشف مواهبك، طور مهاراتك وأنشئ روابط دائمة في مجتمعنا النابض بالحياة",
       button: "تواصل معنا الآن"
     }
+  },
+  es: {
+    badge: "CENTRO DE JUVENTUD OFICIAL",
+    hero: {
+      title: "Dar Chabab",
+      subtitle: "Tetuán",
+      description: "Centro cultural y educativo dedicado al empoderamiento de los jóvenes a través de la expresión creativa, el aprendizaje digital y los programas comunitarios."
+    },
+    cta: {
+      discover: "Descubre nuestros programas",
+      contact: "Contáctanos"
+    },
+    stats: {
+      trained: "Jóvenes formados",
+      programs: "Programas activos",
+      experience: "Años de experiencia"
+    },
+    cards: {
+      community: {
+        title: "Comunidad Activa",
+        subtitle: "500+ miembros"
+      },
+      excellence: {
+        title: "Excelencia",
+        subtitle: "Certificado de calidad"
+      }
+    },
+    services: {
+      title: "Nuestras Actividades",
+      subtitle: "Descubre nuestros espacios creativos y educativos diseñados para desarrollar tus talentos",
+      items: [
+        {
+          title: "Sala de juegos",
+          description: "Espacio lúdico con consolas y juegos de mesa"
+        },
+        // ... other services in Spanish
+      ]
+    },
+    finalCta: {
+      title: "¿Listo para unirte a la aventura?",
+      description: "Descubre tus talentos, desarrolla tus habilidades y crea vínculos duraderos en nuestra comunidad dinámica.",
+      button: "Contáctanos ahora"
+    }
   }
 }

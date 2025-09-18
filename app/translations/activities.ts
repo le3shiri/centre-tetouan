@@ -56,6 +56,35 @@ export const translations = {
       schedule: "Horaires",
       audience: "Public"
     }
+  },
+  es: {
+    pageTitle: "Desarrolla tus habilidades",
+    pageSubtitle: "Nuestros programas",
+    pageDescription: "Programas diversos diseñados para satisfacer las necesidades de los jóvenes de hoy. Formación profesional, expresión creativa y desarrollo personal.",
+    categories: {
+      technical: {
+        title: "Formación Técnica",
+        description: "Informática, ofimática, multimedia"
+      },
+      artistic: {
+        title: "Expresión Artística",
+        description: "Teatro, fotografía, creación"
+      },
+      social: {
+        title: "Desarrollo Social",
+        description: "Trabajo en equipo, liderazgo"
+      }
+    },
+    cta: {
+      join: "Únete",
+      learnMore: "Saber más",
+      register: "Inscríbete ahora"
+    },
+    activityInfo: {
+      duration: "Duración",
+      schedule: "Horarios",
+      audience: "Público"
+    }
   }
 }
 
@@ -82,6 +111,18 @@ export const activities = {
       artistic: "التعبير الفني",
       sports: "الأنشطة الرياضية",
       education: "الدعم التربوي"
+    }
+  },
+  es: {
+    hero: {
+      title: "Nuestras Actividades",
+      subtitle: "Programas y Formaciones"
+    },
+    categories: {
+      technical: "Formación Técnica",
+      artistic: "Expresión Artística",
+      sports: "Actividades Deportivas",
+      education: "Apoyo Educativo"
     }
   }
 }

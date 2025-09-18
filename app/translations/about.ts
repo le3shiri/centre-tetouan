@@ -26,5 +26,19 @@ export const about = {
       title: "فريقنا",
       description: "..."
     }
+  },
+  es: {
+    hero: {
+      title: "Acerca de Nosotros",
+      subtitle: "Nuestra Misión y Visión"
+    },
+    mission: {
+      title: "Nuestra Misión",
+      description: "..."
+    },
+    team: {
+      title: "Nuestro Equipo",
+      description: "..."
+    }
   }
 }
