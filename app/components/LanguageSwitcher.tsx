@@ -14,7 +14,7 @@ export default function LanguageSwitcher() {
         onClick={() => setLanguage('ar')}
         className={`${language === 'ar' ? 'bg-white/10' : ''}`}
       >
-        العربية
+        Ar
       </Button>
       <Button
         variant="ghost"
@@ -22,7 +22,15 @@ export default function LanguageSwitcher() {
         onClick={() => setLanguage('fr')}
         className={`${language === 'fr' ? 'bg-white/10' : ''}`}
       >
-        Français
+        Fr
+      </Button>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() => setLanguage('es')}
+        className={`${language === 'es' ? 'bg-white/10' : ''}`}
+      >
+        ES
       </Button>
     </div>
   )
