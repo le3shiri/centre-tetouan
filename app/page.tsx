@@ -404,12 +404,12 @@ export default function HomePage() {
               dynamique.
             </p>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/contact">
+              <Link href="/inscription">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 text-white px-12 py-6 text-xl rounded-full shadow-2xl"
                 >
-                  Contactez-nous maintenant
+                  Inscription
                   <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
               </Link>
