@@ -101,7 +101,7 @@ const activities = [
 
 export default function ActivitiesPage() {
   const { language } = useLanguage()
-  const t = translations[language]
+  const t = translations[language] || translations['fr']
   const { scrollY } = useScroll()
   const y1 = useTransform(scrollY, [0, 300], [0, -50])
 

@@ -79,6 +79,32 @@ const navigationItems = {
       icon: MessageCircle,
       description: "الاتصال بنا وموقعنا",
     },
+  ],
+  es: [
+    {
+      name: "Inicio",
+      href: "/",
+      icon: Home,
+      description: "Página principal del centro",
+    },
+    {
+      name: "Acerca de",
+      href: "/about",
+      icon: Users,
+      description: "Nuestra misión y nuestro equipo",
+    },
+    {
+      name: "Actividades",
+      href: "/activites",
+      icon: Activity,
+      description: "Nuestros programas y formaciones",
+    },
+    {
+      name: "Contacto",
+      href: "/contact",
+      icon: MessageCircle,
+      description: "Contáctanos y encuéntranos",
+    },
   ]
 }
 
@@ -169,7 +195,7 @@ export default function Navigation() {
 
             {/* Desktop Navigation - simplified, no animation */}
             <div className="hidden lg:flex items-center space-x-1">
-              {navigationItems[language].map((item) => (
+              {(navigationItems[language] || navigationItems['fr']).map((item) => (
                 <div
                   key={item.name}
                   className="relative group"
@@ -258,7 +284,7 @@ export default function Navigation() {
               </div>
               {/* Navigation */}
               <nav className="space-y-2 mb-8">
-                {navigationItems[language].map((item) => (
+                {(navigationItems[language] || navigationItems['fr']).map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
