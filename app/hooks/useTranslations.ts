@@ -135,6 +135,27 @@ const inscriptionTranslations = {
       education: "التنشيط التربوي (للأطفال)"
     },
     submit: "إرسال الطلب"
+  },
+  es: {
+    title: "Formulario de Inscripción",
+    firstName: "Nombre",
+    lastName: "Apellido",
+    birthDate: "Fecha de nacimiento",
+    idNumber: "Número de CIN",
+    address: "Dirección",
+    education: "Nivel de estudios",
+    phone: "Teléfono",
+    email: "Correo electrónico",
+    activities: {
+      title: "Deseo participar en las siguientes actividades:",
+      gaming: "Juegos electrónicos",
+      art: "Actividades artísticas",
+      coworking: "Coworking",
+      recording: "Estudio de grabación",
+      audioVisual: "Audiovisual",
+      education: "Animación educativa (para niños)"
+    },
+    submit: "Enviar solicitud"
   }
 }
 

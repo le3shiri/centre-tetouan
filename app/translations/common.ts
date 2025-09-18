@@ -28,5 +28,20 @@ export const common = {
       links: "روابط مفيدة",
       social: "وسائل التواصل"
     }
+  },
+  es: {
+    nav: {
+      home: "Inicio",
+      about: "Acerca de",
+      activities: "Actividades",
+      contact: "Contacto",
+      register: "Inscribirse"
+    },
+    footer: {
+      address: "Dirección",
+      schedule: "Horarios de apertura",
+      links: "Enlaces útiles",
+      social: "Redes sociales"
+    }
   }
 }

@@ -43,15 +43,23 @@ export default function InscriptionPage() {
       const result = await response.json();
       
       if (result.success) {
-        alert(language === 'fr' ? 'Inscription réussie!' : 'تم التسجيل بنجاح!')
+        const successMessage = language === 'fr' 
+          ? 'Inscription réussie!' 
+          : language === 'ar' 
+          ? 'تم التسجيل بنجاح!' 
+          : '¡Inscripción exitosa!'
+        alert(successMessage)
         // Reset form...
       } else {
         throw new Error('Submission failed');
       }
     } catch (error) {
-      alert(language === 'fr' 
+      const errorMessage = language === 'fr' 
         ? 'Erreur lors de l\'inscription. Veuillez réessayer.' 
-        : 'خطأ في التسجيل. يرجى المحاولة مرة أخرى.')
+        : language === 'ar' 
+        ? 'خطأ في التسجيل. يرجى المحاولة مرة أخرى.'
+        : 'Error en la inscripción. Por favor, inténtalo de nuevo.'
+      alert(errorMessage)
     }
   }
 
