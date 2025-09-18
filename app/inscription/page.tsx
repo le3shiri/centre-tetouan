@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { useState } from "react"
 import { useTranslations } from '../hooks/useTranslations'
+import SuccessModal from '../components/SuccessModal'
 
 export default function InscriptionPage() {
   const { inscriptionTranslations: t, language } = useTranslations()
@@ -28,6 +29,9 @@ export default function InscriptionPage() {
     }
   })
 
+  const [showSuccessModal, setShowSuccessModal] = useState(false)
+  const [successMessage, setSuccessMessage] = useState("")
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -43,13 +47,40 @@ export default function InscriptionPage() {
       const result = await response.json();
       
       if (result.success) {
-        const successMessage = language === 'fr' 
+        const successTitle = language === 'fr' 
           ? 'Inscription réussie!' 
           : language === 'ar' 
           ? 'تم التسجيل بنجاح!' 
           : '¡Inscripción exitosa!'
-        alert(successMessage)
-        // Reset form...
+        
+        const successMsg = language === 'fr'
+          ? 'Votre inscription a été enregistrée avec succès. Nous vous contacterons bientôt.'
+          : language === 'ar'
+          ? 'تم تسجيل طلبك بنجاح. سنتواصل معك قريباً.'
+          : 'Tu inscripción ha sido registrada con éxito. Te contactaremos pronto.'
+        
+        setSuccessMessage(successMsg)
+        setShowSuccessModal(true)
+        
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          birthDate: "",
+          idNumber: "",
+          address: "",
+          education: "",
+          phone: "",
+          email: "",
+          activities: {
+            gaming: false,
+            art: false,
+            coworking: false,
+            recording: false,
+            audioVisual: false,
+            education: false,
+          }
+        })
       } else {
         throw new Error('Submission failed');
       }
@@ -71,6 +102,14 @@ export default function InscriptionPage() {
     { id: "audioVisual", label: t.activities.audioVisual },
     { id: "education", label: t.activities.education },
   ]
+
+  const getSuccessTitle = () => {
+    return language === 'fr' 
+      ? 'Inscription réussie!' 
+      : language === 'ar' 
+      ? 'تم التسجيل بنجاح!' 
+      : '¡Inscripción exitosa!'
+  }
 
   return (
     <div className={`min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-20 px-4 ${language === 'ar' ? 'rtl' : 'ltr'}`}>
@@ -168,6 +207,14 @@ export default function InscriptionPage() {
           </Button>
         </form>
       </div>
+      
+      <SuccessModal
+        isOpen={showSuccessModal}
+        onClose={() => setShowSuccessModal(false)}
+        title={getSuccessTitle()}
+        message={successMessage}
+        language={language}
+      />
     </div>
   )
 }
