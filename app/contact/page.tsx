@@ -17,19 +17,19 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    value: "+212 539 12 34 56",
+    value: "+212 661 559 373 ",
     color: "from-green-500 to-emerald-500",
   },
   {
     icon: Mail,
     title: "Email",
-    value: "contact@darchababtetouan.ma",
+    value: "communication.tadamon@gmail.com",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: MapPin,
     title: "Adresse",
-    value: "Avenue Mohammed V, Quartier Administratif, Tetouan 93000",
+    value: "Av. Med daoud, rue Baghdad, Maison de jeunes Med Daoud, Tetouan 93000",
     color: "from-purple-500 to-pink-500",
   },
   {
