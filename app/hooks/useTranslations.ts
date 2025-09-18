@@ -90,6 +90,51 @@ const translations = {
       subtitle: "مساحة للتعلم والإبداع والنمو",
       description: "اكتشف أنشطتنا وبرامجنا المخصصة للشباب"
     }
+  },
+  es: {
+    services: [
+      {
+        icon: 'Gamepad2',
+        title: "Sala de juegos",
+        description: "Espacio lúdico con consolas y juegos de mesa",
+        color: "from-purple-500 to-pink-500",
+      },
+      {
+        icon: 'Monitor',
+        title: "Formación informática",
+        description: "Desde iniciación hasta programación",
+        color: "from-blue-500 to-cyan-500",
+      },
+      {
+        icon: 'Camera',
+        title: "Fotografía y montaje",
+        description: "Creación visual y edición profesional",
+        color: "from-green-500 to-emerald-500",
+      },
+      {
+        icon: 'FileText',
+        title: "Formación ofimática",
+        description: "Dominio de Microsoft Office",
+        color: "from-orange-500 to-red-500",
+      },
+      {
+        icon: 'Theater',
+        title: "Teatro",
+        description: "Expresión artística y confianza en uno mismo",
+        color: "from-indigo-500 to-purple-500",
+      },
+      {
+        icon: 'Mic',
+        title: "Estudio de grabación",
+        description: "Producción de audio y podcasts",
+        color: "from-pink-500 to-rose-500",
+      },
+    ],
+    hero: {
+      title: "Centro de Juventud Tetuán",
+      subtitle: "Un espacio para aprender, crear y crecer",
+      description: "Descubre nuestras actividades y programas dedicados a los jóvenes"
+    }
   }
 }
 
@@ -162,7 +207,7 @@ const inscriptionTranslations = {
 export function useTranslations() {
   const { language } = useLanguage()
   return {
-    inscriptionTranslations: inscriptionTranslations[language],
+    inscriptionTranslations: inscriptionTranslations[language] || inscriptionTranslations['fr'],
     language
   }
 }
