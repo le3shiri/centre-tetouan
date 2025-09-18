@@ -148,7 +148,7 @@ export default function HomePage() {
               Centre de jeunes
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                Tetouan
+                Med Daoud
               </span>
             </motion.h1>
 

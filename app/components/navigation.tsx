@@ -185,11 +185,11 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg">DC</span>
+                <span className="text-white font-bold text-lg">MJD</span>
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-white">Dar Chabab Tetouan</h1>
-                <p className="text-xs text-gray-400">Centre de Jeunesse</p>
+                <h1 className="text-xl font-bold text-white">Maison de jeunes </h1>
+                <p className="text-xs text-gray-400">Med daoud</p>
               </div>
             </Link>
 
