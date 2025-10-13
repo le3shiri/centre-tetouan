@@ -207,7 +207,8 @@ const inscriptionTranslations = {
 export function useTranslations() {
   const { language } = useLanguage()
   return {
-    inscriptionTranslations: inscriptionTranslations[language] || inscriptionTranslations['fr'],
+    t: translations[language] || translations['fr'],
+    inscriptionT: inscriptionTranslations[language] || inscriptionTranslations['fr'],
     language
   }
 }

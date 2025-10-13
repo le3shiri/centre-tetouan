@@ -1,4 +1,4 @@
-// File: C:\Users\aymen\Downloads\centre-jeunesse-tetouan-main\centre-jeunesse-tetouan-main\app\layout.tsx
+// File: C:\centre-tetouan\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
