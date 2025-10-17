@@ -7,33 +7,6 @@ import { Target, Eye, Heart, Users, Award, Lightbulb } from "lucide-react"
 import PageHero from "../components/page-hero"
 
 
-const teamMembers = [
-  {
-    name: "Ahmed Benali",
-    role: "Directeur du Centre",
-    image: "/placeholder.svg?height=300&width=300",
-    description: "Passionné par l'éducation des jeunes depuis plus de 10 ans",
-  },
-  {
-    name: "Fatima Zahra",
-    role: "Coordinatrice Pédagogique",
-    image: "/placeholder.svg?height=300&width=300",
-    description: "Experte en développement de programmes éducatifs innovants",
-  },
-  {
-    name: "Youssef Alami",
-    role: "Animateur Multimédia",
-    image: "/placeholder.svg?height=300&width=300",
-    description: "Spécialiste en technologies créatives et production audiovisuelle",
-  },
-  {
-    name: "Aicha Mansouri",
-    role: "Responsable Théâtre",
-    image: "/placeholder.svg?height=300&width=300",
-    description: "Comédienne professionnelle et formatrice en arts dramatiques",
-  },
-]
-
 const values = [
   {
     icon: Heart,
@@ -206,57 +179,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Notre{" "}
-              <span className="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Équipe</span>
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Des professionnels passionnés dédiés à l'épanouissement des jeunes
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 transition-all duration-300 overflow-hidden">
-                  <CardContent className="p-0">
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={member.image || "/placeholder.svg"}
-                        alt={member.name}
-                        className="w-full h-64 object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-                      <p className="text-purple-300 font-medium mb-3">{member.role}</p>
-                      <p className="text-gray-300 text-sm">{member.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Partners Section */}
       <section className="py-20 px-4">
